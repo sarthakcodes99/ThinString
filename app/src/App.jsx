@@ -1,17 +1,12 @@
-import Navbar from "./components/Navbar";
-import Main from "./components/Main";
-import Submain from "./components/Submain";
-import Techlist from "./components/Techlist";
-import Lastsection from "./components/Lastsection";
+import { Routes, Route} from "react-router-dom";
+import Landingpage from "./pages/Landingpage";
+import Aboutpage from "./pages/Aboutpage";
 const App = () => {
     return(
-     <>
-     <Navbar />
-     <Main />
-     <Submain />
-     <Techlist/>
-     <Lastsection />
-     </>
+     <Routes>
+      <Route path="/" element={<Landingpage />}/>
+      <Route path="/about" element={<Aboutpage />}></Route>
+     </Routes>
     )
 }
 
