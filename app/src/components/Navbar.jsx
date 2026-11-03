@@ -5,7 +5,7 @@ const Navbar = () => {
      <div className="navbar flex items-center justify-between p-8 pl-80 pr-80">
         <div className="left text-[20px] font-thin text-black flex items-center">Thin<span className='font-bold'>String</span></div>
         <div className="mid flex gap-4 text-gray-600 hover:text-gray-900">
-            <a href="">Services</a>
+            <Link to={'/services'}>Services</Link>
             <Link to={'/about'}>About</Link>
             <a href="">Contact</a>
             <a href="">Resources</a>
