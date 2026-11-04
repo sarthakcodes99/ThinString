@@ -1,4 +1,5 @@
 import img from '../assets/img.webp'
+import { Link } from 'react-router-dom';
 const Main = () => {
         return(
             <div className="main flex gap-20 items-center justify-center min-h-screen">
@@ -9,8 +10,7 @@ const Main = () => {
                         <p className='text-lg mt-4 text-slate-600 max-w-xl'>We don't care about your degree, if you know how to code, come build with us. We Care About Your Skills, Not Your Degree</p>
                     </div>
                         <div className="btns flex gap-4">
-                            <button className='h-10 w-50 rounded-sm bg-black text-white font-noraml'>See Our Products</button>
-                            <button className='h-10 w-30 border-2 text-[14px] border-black rounded-sm'>GitHub Repo</button>
+                            <Link className='h-10 w-50 rounded-sm bg-black text-white font-noraml flex items-center justify-center' to={'/services'} >See Our Products</Link>
                         </div>
                 </div>
                 <div className="main-right">
